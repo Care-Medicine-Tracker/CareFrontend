@@ -49,7 +49,6 @@ export class MedicineInventory extends Component
   }
   async deleteItem(id)
   {
-    console.log(id)
     let confirmDeletion = window.confirm('Do you really wish to delete it?');
     if (confirmDeletion)
     {
