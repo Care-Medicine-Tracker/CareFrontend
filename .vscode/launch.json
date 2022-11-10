@@ -20,7 +20,7 @@
             "type": "pwa-msedge",
             "request": "launch",
             "name": "Client",
-            "url": "http://localhost:3000",
+            "url": "http://localhost:3030",
             "webRoot": "${workspaceFolder}/src"
         }
     ],
