@@ -47,7 +47,7 @@ export default class GrantItemForm extends React.Component
 
     async grantItem()
     {
-        fetch(`${window.INVENTORY_ITEMS_API_URL}`, {
+        fetch(`${window.USER_MEDICINE_INVENTORY_ITEMS_API_URL}`, {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'
