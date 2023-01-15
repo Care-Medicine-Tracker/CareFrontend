@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router';
-import { Layout } from './components/Layout';
-import { Home } from './components/Home';
-import { MedicineInventory } from './components/MedicineInventory';
-import { UserMedicineInventory } from './components/UserMedicineInventory';
-import { ApplicationPaths } from './components/Constants';
+import { config } from '../config';
 import { PublicClientApplication } from '@azure/msal-browser';
-import { config } from './config';
+import { Route } from 'react-router';
+import { Layout } from './Layout';
+import { Home } from './Home';
+import { MedicineInventory } from './MedicineInventory';
+import { UserMedicineInventory } from './UserMedicineInventory';
+import { ApplicationPaths } from './Constants';
 
-
-import './App.css'
-
-export default class App extends Component
+export class Login extends Component
 {
+
   constructor(props)
   {
     super(props);
@@ -62,8 +60,7 @@ export default class App extends Component
   {
     this.publicClientApplication.logoutPopup();
   }
-
-  static displayName = App.name;
+  static displayName = Login.name;
 
   render()
   {
@@ -89,29 +86,3 @@ export default class App extends Component
     );
   }
 }
-
-// import React, { Component } from 'react';
-// import { Route } from 'react-router';
-// import { Layout } from './components/Layout';
-// import { Home } from './components/Home';
-// import { MedicineInventory } from './components/MedicineInventory';
-// import { UserMedicineInventory } from './components/UserMedicineInventory';
-// import { ApplicationPaths } from './components/Constants';
-
-// import './App.css'
-
-// export default class App extends Component
-// {
-//   static displayName = App.name;
-
-//   render()
-//   {
-//     return (
-//       <Layout>
-//         <Route exact path='/' component={Home} />
-//         <Route path={ApplicationPaths.MedicineInventoryPath} component={MedicineInventory} />
-//         <Route path={ApplicationPaths.UserMedicineInventoryPath} component={UserMedicineInventory} />
-//       </Layout>
-//     );
-//   }
-// }
