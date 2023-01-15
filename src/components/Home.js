@@ -21,7 +21,7 @@ export class Home extends Component
         <ul>
           <li>Manage the <a href={window.RABBITMQ_URL} target="_blank" rel="noreferrer">message queues</a></li>
           <li>Explore the Open API documentation:
-          <ul>
+            <ul>
               <li><a href={`${window.MEDICINE_INVENTORY_SERVICE_URL}/swagger`} target="_blank" rel="noreferrer">Medicine Inventory service</a></li>
               <li><a href={`${window.USER_MEDICINE_INVENTORY_SERVICE_URL}/swagger`} target="_blank" rel="noreferrer">User Medicine Inventory service</a></li>
             </ul>
