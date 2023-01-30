@@ -9,7 +9,7 @@
 
 //production
 // medicine inventory service
-window.SERVICE_URL = 'http://20.103.147.242'
+window.SERVICE_URL = 'http://20.238.244.215'
 window.MEDICINE_INVENTORY_ITEMS_API_URL = `${window.SERVICE_URL}/medicines`
 
 // user medicine inventory service
